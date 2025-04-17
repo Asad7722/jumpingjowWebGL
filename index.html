@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=400 height=780 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=400 height=760 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -52,12 +52,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/web build.loader.js";
+      var loaderUrl = buildUrl + "/Jumping Joe WebBuild.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/web build.data.unityweb",
-        frameworkUrl: buildUrl + "/web build.framework.js.unityweb",
-        codeUrl: buildUrl + "/web build.wasm.unityweb",
+        dataUrl: buildUrl + "/Jumping Joe WebBuild.data.unityweb",
+        frameworkUrl: buildUrl + "/Jumping Joe WebBuild.framework.js.unityweb",
+        codeUrl: buildUrl + "/Jumping Joe WebBuild.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "GO4",
         productName: "Jumping Joe",
@@ -99,7 +99,7 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
         canvas.style.width = "400px";
-        canvas.style.height = "780px";
+        canvas.style.height = "760px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
